@@ -162,7 +162,7 @@ You'll also need to point the database to the sqlc generated files by importing
 them into your main.go file:
 
 ```go
-	"github.com/tomit4/rkabman/internal/database"
+	"github.com/kabman/internal/database"
 ```
 
 ## Building And Running The Server
