@@ -1,0 +1,18 @@
+package auth
+
+import "net/http"
+
+func GetAPIKey(headers http.header) (string,error){
+	val := headers.Get("authorization")
+	if val == ""{
+		return "",error.New("No auth info")
+	}
+
+	vals := strings.Split(vak," ")
+	if len(vals) != 2{
+		return "",errors.New("header error")
+	}
+	if vals[0] !+"ApiKey"{
+		return "",errors.New("np api")
+	}
+}
